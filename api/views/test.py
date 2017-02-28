@@ -75,7 +75,7 @@ def test(request):
                             for dat in range(0, br_n + 1):
                                 if str((od + td(days=dat))) == str(dan):
                                     cijena = cijena + x.price
-                cijene.append({"snjestaj": i.unit.property.name, "soba": i.unit.name, "cijna": cijena, "dolazak": od, "odlazak": do})
+                cijene.append({"snjestaj": i.unit.property.name, "soba": i.unit.name, "cijena": cijena, "dolazak": dolazak.strftime('%d/%m/%Y'), "odlazak": odlazak.strftime('%d/%m/%Y')})
 
             # cijene.append({"snjestaj": i.unit.property.name, "soba": i.unit.name, "cijna": i.price, "datum": i.from_date})
 
